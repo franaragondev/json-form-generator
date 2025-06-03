@@ -27,8 +27,7 @@ Below is an example of the JSON configuration used to generate the form. It defi
   "title": "Registration Form",
   "buttons": [
     { "text": "Submit", "action": "submit" },
-    { "text": "Reset", "action": "reset" },
-    { "text": "Cancel", "action": "cancel" }
+    { "text": "Reset", "action": "reset" }
   ],
   "fields": [
     {
@@ -44,12 +43,6 @@ Below is an example of the JSON configuration used to generate the form. It defi
       "placeholder": "Example: 30"
     },
     {
-      "type": "multi-line",
-      "label": "Personal Description",
-      "name": "description",
-      "placeholder": "Tell us something about yourself"
-    },
-    {
       "type": "date",
       "label": "Birth Date",
       "name": "birthDate"
@@ -59,6 +52,12 @@ Below is an example of the JSON configuration used to generate the form. It defi
       "label": "Gender",
       "name": "gender",
       "options": ["Male", "Female", "Other"]
+    },
+    {
+      "type": "multi-line",
+      "label": "Personal Description",
+      "name": "description",
+      "placeholder": "Tell us something about yourself"
     },
     {
       "type": "boolean",
